@@ -4,9 +4,10 @@ jobs:
   send-notification:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
       - name: Send Notification
         run: |
           git log -1 --pretty=format:"New Commit by %an: %s" >> commit_message.txt
           cat commit_message.txt | xargs -I {} gh issue create --title "New Commit" --body "{}"
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🍏 This job's status is ${{ job.status }}."

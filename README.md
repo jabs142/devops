@@ -43,3 +43,4 @@
 
 ## 🎈 Future Improvements:
 
+![GitHub Contribution Snake](dist/ocean.gif)
