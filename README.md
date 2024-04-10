@@ -3,8 +3,7 @@
 ## 💻  Overview: 
 This project is an exploration of Continuous Integration/Continuous Deployment (CI/CD) concepts using GitHub Actions. The goal is to set up workflows that automatically trigger various actions whenever changes are committed to the repository. Given my beginner status, the approach is exploratory in nature, focusing on breadth of learning rather than in-depth implementation. 
 <br> 
-
-
+<br>
 
 ## 💻  Technologies & Tools Used:
 
@@ -24,9 +23,28 @@ This project is an exploration of Continuous Integration/Continuous Deployment (
 
 ## 💡 Demo:
 
+Created a simple web-application deployed [here](https://jabs142.github.io/devops/).
+<br>
+<br>
 
 ### 💬  Git Commit Notification:
 - Whenever a Git commit is made, an email is sent to the owner of the repository.
+
+```yaml
+jobs:
+  send-notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: cinotify/github-action@main
+        with:
+          to: "owner@gmail.com"
+          subject: "Git Commit Notification 🎉"
+          body: "<em>A Git Commit has been made on ${{github.repository}} by ${{github.actor}}.</em>"
+          type: "text/html"
+```
+
+- You can access the available GitHub contexts like `github.repository` or `github.actor` [here](https://docs.github.com/en/actions/learn-github-actions/contexts)
 
 Future improvements: 
 1) Instead of just the owner of the repository, all contributors could receive an email
