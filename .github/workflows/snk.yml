@@ -1,13 +1,14 @@
-name: Generate GitHub Contribution Snake
+name: GitHub Contribution Snake
 
-on:
-  schedule:
-    - cron: "0 0 * * *" # Run daily
+on: [push]
 
 jobs:
   generate-snake:
     runs-on: ubuntu-latest
     steps:
+      - name: Create Dist Directory
+        run: mkdir -p dist
+
       - name: Checkout Repository
         uses: actions/checkout@v2
 
