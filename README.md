@@ -4,13 +4,17 @@
 This project is an exploration of Continuous Integration/Continuous Deployment (CI/CD) concepts using GitHub Actions. The goal is to set up workflows that automatically trigger various actions whenever changes are committed to the repository. Given my beginner status, the approach is exploratory in nature, focusing on breadth of learning rather than in-depth implementation. 
 <br> 
 
+
+
 ## 💻  Technologies & Tools Used:
+
 ![](https://skills.thijs.gg/icons?i=js,html,css,git,github)
 - JavaScript 
 - HTML
 - CSS 
 - Git
 - GitHub
+
 
 ### [GitHub Actions](https://docs.github.com/en/actions) 
 - Feature of GitHub that enables users to automate their workflows
@@ -21,7 +25,7 @@ This project is an exploration of Continuous Integration/Continuous Deployment (
 ## 💡 Demo:
 
 
-### 💬 Git Commit Notification:
+### 💬  Git Commit Notification:
 - Whenever a Git commit is made, an email is sent to the owner of the repository.
 
 Future improvements: 
@@ -29,7 +33,7 @@ Future improvements:
 2) Set up rules and groups, such that only certain individuals are notified of changes to specific files.
 3) Modify notification system to send emails for pull requests instead of individual git commits.
 <p align="center">
-  <img src="/images/spam.png" alt="spam" style="width:50%; max-width:400px;" />
+  <img src="/images/spam.png" alt="spam" style="width:80%" />
 </p>
 <br> 
 
@@ -41,7 +45,7 @@ Future improvements:
 - Establishes best practices and consistent formatting across multiple programming languages
 - By default, it covers an extensive list of languages 
 
-![overall errors](/images/initialize.png)
+![initialize](/images/initialize.png)
 <br>
 
 **Errors caught**:
@@ -57,7 +61,7 @@ Future improvements:
   </body>
 ```
 <p align="center">
-  <img src="/images/html.png" alt="Errors in HTML" style="width:50%; max-width:400px;" />
+  <img src="/images/html.png" alt="Errors in HTML" style="width:80%" />
 </p>
 <br> 
 
@@ -70,13 +74,13 @@ Future improvements:
 }
 ```
 <p align="center">
-  <img src="/images/css.png" alt="Errors in CSS" style="width:50%; max-width:400px;" />
+  <img src="/images/css.png" alt="Errors in CSS" style="width:80%" />
 </p>
-
+<br>
 
 Once all errors are caught, you would see this success page instead:
 <p align="center">
-  <img src="/images/success.png" alt="Success" style="width:50%; max-width:400px;" />
+  <img src="/images/success.png" alt="Success" style="width:80%" />
 </p>
 <br>
 
@@ -94,6 +98,7 @@ Future improvements:
     VALIDATE_MARKDOWN: true
 ```
 If you set any of the `VALIDATE_[LANGUAGE]` variables to `true`, super-linter defaults to leaving any unset variable to `false` (only validate those languages).
+
 <br> 
 
 2) Configuring the Super-Linter to ignore certain files or directories.
