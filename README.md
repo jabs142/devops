@@ -1,62 +1,50 @@
 # Devops CI/CD Project 🚧
+
+## 💻  Overview: 
+This project is an exploration of Continuous Integration/Continuous Deployment (CI/CD) concepts using GitHub Actions. The goal is to set up workflows that automatically trigger various actions whenever changes are committed to the repository. Given my beginner status, the approach is exploratory in nature, focusing on breadth of learning rather than in-depth implementation. 
 <br> 
 
-## 💻 Overview: 
-This project is an exploration of Continuous Integration/Continuous Deployment (CI/CD) concepts using GitHub Actions. The goal is to set up workflows that automatically trigger various actions whenever changes are committed to the repository.
-<br> 
-
-## 💻 Requirements:
-* An action is triggered once someone commits a change in the repository
-* The GitHub repository and the README.md file provide sufficient explanation of the project, the steps taken, and the thought process behind the implementation.
-<br> 
-
-
-## 💻 Basis of this project: 
-* This project is an opportunity to practice CI/CD concepts and apply some DevOps practices.
-* Given my beginner status and time constraints, the approach is exploratory in nature, focusing on breadth of learning rather than in-depth implementation. 
-<br> 
-
-
-## 💻 Technologies & Tools Used:
+## 💻  Technologies & Tools Used:
 ![](https://skills.thijs.gg/icons?i=js,html,css,git,github)
 - JavaScript 
 - HTML
 - CSS 
 - Git
-- GitHub (GitHub Actions)
+- GitHub
 
-
-### GitHub Actions 
+### [GitHub Actions](https://docs.github.com/en/actions) 
 - Feature of GitHub that enables users to automate their workflows
 - It allows developers to build, test, and deploy their code without leaving the GitHub platform.
 - YAML files in .github/workflows directory is used to define workflows 
 <br> 
 
-## Demo:
+## 💡 Demo:
 
-### Notification:
+
+### 💬 Git Commit Notification:
 - Whenever a Git commit is made, an email is sent to the owner of the repository.
 
 Future improvements: 
 1) Instead of just the owner of the repository, all contributors could receive an email
 2) Set up rules and groups, such that only certain individuals are notified of changes to specific files.
 3) Modify notification system to send emails for pull requests instead of individual git commits.
-
+<p align="center">
+  <img src="/images/spam.png" alt="spam" style="width:50%; max-width:400px;" />
+</p>
 <br> 
 
 
-### Lint:
+###  🧹 Linter:
 [![Super-Linter](https://github.com/jabs142/devops/actions/workflows/lint.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 - Basic set up for running the super linter tool 
 - Establishes best practices and consistent formatting across multiple programming languages
 - By default, it covers an extensive list of languages 
 
-
 ![overall errors](/images/initialize.png)
-Errors caught:
-![overall errors](/images/overall.png)
+<br>
 
+**Errors caught**:
 
 1) ❗ `changeGreeting` - The id and class attribute values must be in lowercase and split by a dash.
 ```html
@@ -68,7 +56,9 @@ Errors caught:
     <script src="script.js"></script>
   </body>
 ```
-![html errors](/images/html.png)
+<p align="center">
+  <img src="/images/html.png" alt="Errors in HTML" style="width:50%; max-width:400px;" />
+</p>
 <br> 
 
 2) ❗ Expected "0.1" to be "10%"
@@ -79,10 +69,15 @@ Errors caught:
   text-align: center;
 }
 ```
-![css errors](/images/css.png)
+<p align="center">
+  <img src="/images/css.png" alt="Errors in CSS" style="width:50%; max-width:400px;" />
+</p>
+
 
 Once all errors are caught, you would see this success page instead:
-![success](/images/success.png)
+<p align="center">
+  <img src="/images/success.png" alt="Success" style="width:50%; max-width:400px;" />
+</p>
 <br>
 
 
