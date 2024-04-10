@@ -40,6 +40,8 @@ This project is an exploration of Continuous Integration/Continuous Deployment (
 Future improvements: 
 1) Instead of just the owner of the repository, all contributors could receive an email
 2) Set up rules and groups, such that only certain individuals are notified of changes to specific files.
+3) Modify notification system to send emails for pull requests instead of individual git commits.
+
 <br> 
 
 
@@ -50,7 +52,41 @@ Future improvements:
 - Establishes best practices and consistent formatting across multiple programming languages
 - By default, it covers an extensive list of languages 
 
-- Future improvements:
+
+![overall errors](/images/initialize.png)
+Errors caught:
+![overall errors](/images/overall.png)
+
+
+1) ❗ `changeGreeting` - The id and class attribute values must be in lowercase and split by a dash.
+```html
+  <body>
+    <div class="container">
+      <h1 id="greeting">Hello DevOps</h1>
+      <button id="changeGreeting">Change Greeting</button> 
+    </div>
+    <script src="script.js"></script>
+  </body>
+```
+![html errors](/images/html.png)
+<br> 
+
+2) ❗ Expected "0.1" to be "10%"
+```css
+.container {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+```
+![css errors](/images/css.png)
+
+Once all errors are caught, you would see this success page instead:
+![success](/images/success.png)
+<br>
+
+
+Future improvements:
 1) Adding additional linter configurations or rules.
 ```yaml
 - name: Super-linter
@@ -87,5 +123,3 @@ If you set any of the `VALIDATE_[LANGUAGE]` variables to `true`, super-linter de
 * Integrate automated testing and deployment to cloud platforms, such as AWS or Google Cloud.
 * Explore more advanced linting configurations and integrations with other tools, like code coverage reporting.
 <br> 
-
-![GitHub Contribution Snake](dist/ocean.gif)
