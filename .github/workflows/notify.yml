@@ -1,5 +1,11 @@
 name: Commit notification
+
 on: [push]
+
+permissions:
+  contents: read
+  actions: write
+
 jobs:
   send-notification:
     runs-on: ubuntu-latest
