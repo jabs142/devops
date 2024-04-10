@@ -1,5 +1,5 @@
 const greetingElement = document.getElementById("greeting");
-const changeGreetingButton = document.getElementById("changeGreeting");
+const changeGreetingButton = document.getElementById("change-greeting");
 
 const greetings = [
   "Hello DevOps",
