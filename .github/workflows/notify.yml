@@ -9,5 +9,5 @@ jobs:
         with:
           to: "jallyjumpus@gmail.com"
           subject: "Git Commit Notification 🎉"
-          body: "<em>A Git Commit has been made on ${{github.repository}}.</em>"
+          body: "<em>A Git Commit has been made on ${{github.repository}} by ${{github.actor}}.</em>"
           type: "text/html"
