@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@ h1 {
 }
 
 button {
-  background-color: #00c4cc;
+  background-color: rgba(0, 196, 204, 1);
   color: white;
   border: none;
   padding: 0.8rem 1.6rem;
@@ -31,5 +31,5 @@ button {
 }
 
 button:hover {
-  background-color: #01b8be;
+  background-color: rgba(1, 184, 190, 1);
 }
